@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.5dd22fda.chunk.css",
-    "main.js": "/static/js/main.8b2df3f4.chunk.js",
-    "main.js.map": "/static/js/main.8b2df3f4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.05e2b54e.js",
-    "runtime-main.js.map": "/static/js/runtime-main.05e2b54e.js.map",
-    "static/js/2.c299a6ce.chunk.js": "/static/js/2.c299a6ce.chunk.js",
-    "static/js/2.c299a6ce.chunk.js.map": "/static/js/2.c299a6ce.chunk.js.map",
-    "static/js/3.bc185195.chunk.js": "/static/js/3.bc185195.chunk.js",
-    "static/js/3.bc185195.chunk.js.map": "/static/js/3.bc185195.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.5dd22fda.chunk.css.map": "/static/css/main.5dd22fda.chunk.css.map",
-    "static/js/2.c299a6ce.chunk.js.LICENSE.txt": "/static/js/2.c299a6ce.chunk.js.LICENSE.txt",
-    "static/media/CloseIcon.cc723929.svg": "/static/media/CloseIcon.cc723929.svg"
+    "main.css": "/todo-mvc-example/static/css/main.5dd22fda.chunk.css",
+    "main.js": "/todo-mvc-example/static/js/main.8b2df3f4.chunk.js",
+    "main.js.map": "/todo-mvc-example/static/js/main.8b2df3f4.chunk.js.map",
+    "runtime-main.js": "/todo-mvc-example/static/js/runtime-main.bafc058b.js",
+    "runtime-main.js.map": "/todo-mvc-example/static/js/runtime-main.bafc058b.js.map",
+    "static/js/2.41d4613e.chunk.js": "/todo-mvc-example/static/js/2.41d4613e.chunk.js",
+    "static/js/2.41d4613e.chunk.js.map": "/todo-mvc-example/static/js/2.41d4613e.chunk.js.map",
+    "static/js/3.bc185195.chunk.js": "/todo-mvc-example/static/js/3.bc185195.chunk.js",
+    "static/js/3.bc185195.chunk.js.map": "/todo-mvc-example/static/js/3.bc185195.chunk.js.map",
+    "index.html": "/todo-mvc-example/index.html",
+    "static/css/main.5dd22fda.chunk.css.map": "/todo-mvc-example/static/css/main.5dd22fda.chunk.css.map",
+    "static/js/2.41d4613e.chunk.js.LICENSE.txt": "/todo-mvc-example/static/js/2.41d4613e.chunk.js.LICENSE.txt",
+    "static/media/CloseIcon.cc723929.svg": "/todo-mvc-example/static/media/CloseIcon.cc723929.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.05e2b54e.js",
-    "static/js/2.c299a6ce.chunk.js",
+    "static/js/runtime-main.bafc058b.js",
+    "static/js/2.41d4613e.chunk.js",
     "static/css/main.5dd22fda.chunk.css",
     "static/js/main.8b2df3f4.chunk.js"
   ]
