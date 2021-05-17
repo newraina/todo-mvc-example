@@ -10,7 +10,7 @@ import styled from "styled-components";
 
 const AppContainer = styled.div`
   padding: 24px;
-  width: 300px;
+  width: 320px;
 `;
 
 const AppTitle = styled.h1`
