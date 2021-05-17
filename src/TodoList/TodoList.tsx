@@ -1,6 +1,8 @@
-import { FC } from "react";
-import { Todo } from "./interface";
+import { FC, useCallback, useState } from "react";
+import { Todo, TodoStatus } from "./interface";
 import TodoItem from "./TodoItem";
+import StatusFilter from "./StatusFilter";
+import styled from "styled-components";
 
 export interface TodoListProps {
   data: Todo[];
@@ -12,20 +14,44 @@ export interface TodoListProps {
   markTodoCompleted(id: string): void;
 }
 
+const TodoListContent = styled.div`
+  margin-top: 6px;
+`;
+
 const TodoList: FC<TodoListProps> = (props) => {
   const { data, removeTodo, markTodoActive, markTodoCompleted } = props;
 
+  const [selectedStatus, setSelectedStatus] =
+    useState<TodoStatus | undefined>(undefined);
+
+  const onlySelectedStatus = useCallback(
+    (todo: Todo) => {
+      if (!selectedStatus) {
+        return true;
+      }
+      return todo.status === selectedStatus;
+    },
+    [selectedStatus]
+  );
+
   return (
     <div>
-      {data.map((todoItem) => (
-        <TodoItem
-          key={todoItem.id}
-          data={todoItem}
-          removeTodo={removeTodo}
-          markTodoActive={markTodoActive}
-          markTodoCompleted={markTodoCompleted}
-        />
-      ))}
+      <StatusFilter
+        status={selectedStatus}
+        onStatusChange={setSelectedStatus}
+      />
+
+      <TodoListContent>
+        {data.filter(onlySelectedStatus).map((todo) => (
+          <TodoItem
+            key={todo.id}
+            data={todo}
+            removeTodo={removeTodo}
+            markTodoActive={markTodoActive}
+            markTodoCompleted={markTodoCompleted}
+          />
+        ))}
+      </TodoListContent>
     </div>
   );
 };

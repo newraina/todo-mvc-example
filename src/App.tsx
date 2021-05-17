@@ -19,7 +19,7 @@ const AppTitle = styled.h1`
 `;
 
 const Input = styled.input`
-  margin-bottom: 6px;
+  margin-bottom: 12px;
   padding: 6px;
   width: 100%;
 `;
