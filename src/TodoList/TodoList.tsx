@@ -20,6 +20,7 @@ const TodoListContent = styled.div`
 
 const TodoList: FC<TodoListProps> = (props) => {
   const { data, removeTodo, markTodoActive, markTodoCompleted } = props;
+  const isListEmpty = data.length === 0;
 
   const [selectedStatus, setSelectedStatus] =
     useState<TodoStatus | undefined>(undefined);
@@ -36,10 +37,12 @@ const TodoList: FC<TodoListProps> = (props) => {
 
   return (
     <div>
-      <StatusFilter
-        status={selectedStatus}
-        onStatusChange={setSelectedStatus}
-      />
+      {!isListEmpty && (
+        <StatusFilter
+          status={selectedStatus}
+          onStatusChange={setSelectedStatus}
+        />
+      )}
 
       <TodoListContent>
         {data.filter(onlySelectedStatus).map((todo) => (
