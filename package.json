@@ -2,9 +2,11 @@
   "name": "todo-mvc-expample",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://newraina.github.io/todo-mvc-example",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "npm run build && gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -26,6 +28,7 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.9",
+    "gh-pages": "^3.1.0",
     "prettier": "^2.3.0"
   },
   "eslintConfig": {
