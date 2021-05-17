@@ -5,4 +5,4 @@ A simple todo list app built with React / TypeScript / Zustand
 [online demo](https://newraina.github.io/todo-mvc-example)
 
 ## Screenshot
-![screenshot](https://user-images.githubusercontent.com/10708802/118464077-09c43200-b733-11eb-81eb-09f96e7f7428.png)
+<img src="https://user-images.githubusercontent.com/10708802/118491005-253e3580-b751-11eb-9868-004bccaf966a.png" width="350" >
