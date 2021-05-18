@@ -22,6 +22,11 @@ const Input = styled.input`
   margin-bottom: 12px;
   padding: 6px;
   width: 100%;
+  appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  outline-width: 1px;
+  outline-color: rgba(0, 0, 0, 0.7);
 `;
 
 function App() {
